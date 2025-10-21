@@ -23,7 +23,7 @@ export default function PropertyTable({ property }: PropertyFormProps) {
                 value={property?.status ?? ""}
             />
             <button type="submit">
-                Salvar
+                {property ? "Editar" : "Salvar"}
             </button>
         </form>
     );
