@@ -1,5 +1,5 @@
 import { createRoot } from 'react-dom/client';
-import PropertiesTable from './pages/PropertiesTable.tsx';
+import PropertiesTable from './components/PropertiesTable.tsx';
 import propertyGetterService from './services/PropertiesGetterService.ts';
 
 const rootElement = document.getElementById('root');
