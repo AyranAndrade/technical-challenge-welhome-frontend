@@ -32,7 +32,7 @@ export default function PropertiesTable({ properties }: PropertiesTableProps) {
                             {property.status}
                         </td>
                         <td>
-                            <button style={{ marginRight: 8 }}>
+                            <button>
                                 Editar
                             </button>
                             <button>
