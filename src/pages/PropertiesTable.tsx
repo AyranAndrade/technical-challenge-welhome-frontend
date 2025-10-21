@@ -1,23 +1,10 @@
-import { useEffect, useState } from "react";
 import type { Property } from "../models/Property.ts";
-import propertyGetterService from "../services/PropertiesGetterService.ts";
 
-export default function PropertiesTable() {
-    const [properties, setProperties] = useState<Property[]>([]);
+type PropertiesTableProps = {
+    properties: Property[];
+};
 
-    useEffect(() => {
-        async function fetchData() {
-            try {
-                const values = await propertyGetterService.getAll();
-                setProperties(values);
-            } catch (err) {
-                console.error("Unknown error: ", err);
-            }
-        }
-
-        fetchData();
-    }, []);
-
+export default function PropertiesTable({ properties }: PropertiesTableProps) {
     return (
         <table>
             <thead>
