@@ -1,5 +1,5 @@
 import { createRoot } from 'react-dom/client';
-import PropertiesTable from './components/PropertiesTable.tsx';
+import PropertyTable from './components/PropertyTable.tsx';
 import propertyGetterService from './services/PropertiesGetterService.ts';
 
 const rootElement = document.getElementById('root');
@@ -10,4 +10,4 @@ if (!rootElement) {
 
 var properties = await propertyGetterService.getAll();
 
-createRoot(rootElement).render(<PropertiesTable properties={properties}/>);
+createRoot(rootElement).render(<PropertyTable properties={properties}/>);

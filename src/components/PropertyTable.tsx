@@ -4,7 +4,7 @@ type PropertiesTableProps = {
     properties: Property[];
 };
 
-export default function PropertiesTable({ properties }: PropertiesTableProps) {
+export default function PropertyTable({ properties }: PropertiesTableProps) {
     return (
         <table>
             <thead>
